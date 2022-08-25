@@ -25,7 +25,7 @@ h1 {
   font-size: 5rem;
   font-weight: 900;
   line-height: 1.1;
-  max-inline-size: 15ch;
+  max-inline-size: 100ch;
 }
 
 @media (max-width: 480px) {
