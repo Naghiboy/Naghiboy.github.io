@@ -13,9 +13,10 @@ h1 {
    
       
     body { 
-        background: url("https://www.museivaticani.va/content/dam/museivaticani/immagini/home/01_Musei_del_papa.jpg/_jcr_content/renditions/cq5dam.web.1280.1280.jpeg") no-repeat center center fixed; 
+        background: url("https://www.museumsrome.com/images/headers/ARTICOLI_ESTESI/Cappella-Sistina-ok.jpg") no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+        font-size: 200%
       }
