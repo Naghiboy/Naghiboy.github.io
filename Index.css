@@ -1,49 +1,115 @@
-.dynamic-text-shadow {
-  /*  larger font size, more shadow distance  */
-  text-shadow: .1em .1em 0 hsl(200 50% 30%);
+body{
+  background-color: rgb(163, 255, 158);
 }
 
 
+P{
+  margin:auto;
+  font-size:10vmin;
+  white-space:nowrap;
+  transform-style:preserve-3d;
+  animation:rotate 10s infinite ease-in-out;
+  text-align:center;   
+  color: rgb(255, 0, 251);
 
+}
+@keyframes rotate{
+  0%{
+      transform:rotateY(-45deg);
+  }
+  50%{
+      /*逆时针旋转45度*/
+      transform:rotateY(45deg);
+  }
+  100%{
+      transform:rotateY(-45deg);
+  }
+}   
 
+/*制造文字重叠*/
+p>span{
+  text-shadow:
+       1px 1px 0 rgba(0,0,0,0,0.9),
+       2px 2px 0 rgba(0,0,0,0,0.7),
+       3px 3px 0 rgba(0,0,0,0,0.5),
+       4px 4px 0 rgba(0,0,0,0,0.3),
+       5px 5px 0 rgba(0,0,0,0,0.1),  
 
+      }
 
-
-
-* {
-  box-sizing: border-box;
-  margin: 0;
+/*控制单个文字动画*/
+p>span:nth-child(1),
+p>span:nth-last-child(1){
+  animation:filterblur1 10s infinte ease-in-out;
 }
 
-html {
-  block-size: 100%;
-  background: hsl(200 50% 50%);
-  color: hsl(200 50% 90%);
-}
-
-h1 {
-  font-size: 5rem;
-  font-weight: 900;
-  line-height: 1.1;
-  max-inline-size: 100ch;
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 2.5rem;
+@keyframes filterBlur1{
+  0%{
+      filter:blur(0px)contrast(5);
+  }
+  50%{
+      filter:blur(6px)contrast(1);
+  }
+  100%{
+      filter:blur(0px)contrast(5);
   }
 }
 
-h2 {
-  text-transform: uppercase;
-  text-align: end;
+p>span:nth-child(2),
+P>span:nth-last-child(2){
+  animation:filterBlur1 10s infinite ease-in-out;
 }
 
-body {
-  min-block-size: 100%;
-  font-family: 'Fugaz One', cursive;
-  
-  display: grid;
-  place-content: center;
-  padding: 5vmin;
+@keyframes filterBlur2{
+  0%{
+      filter:blur(0px)contrast(5);
+  }
+  50%{
+      filter:blur(5px)contrast(1);
+  }
+  100%{
+      filter:blur(0px)contrast(5);
+  }
+}
+
+p>span:nth-child(3),
+P>span:nth-last-child(3){
+  animation:filterblur1 10s infinite ease-in-out;
+}
+
+@keyframes filterBlur3{
+  0%{
+      filter:blur(0px)contrast(5);
+  }
+  50%{
+      filter:blur(4px)contrast(1);
+  }
+  100%{
+      filter:blur(0px)contrast(5);
+  }
+}
+
+p>span:nth-child(4),
+P>span:nth-last-child(4){
+  animation:filterBlur1 10s infinite ease-in-out;
+}
+
+@keyframes filterBlur4{
+  0%{
+      filter:blur(0px)contrast(5);
+  }
+  50%{
+      filter:blur(3px)contrast(1);
+
+  }
+  100%{
+      filter:blur(0px)contrast(5);
+
+  }
+}
+
+
+p>span:nth-child(-n+5){
+  animation-delay:-5s;
+
 }
