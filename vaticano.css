@@ -1,0 +1,21 @@
+h1 {
+    text-align: center;
+      color: rgb(255, 255, 255);
+     }
+
+   p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font: 1em/150% Helvetica, Arial, sans-serif;
+    
+   }
+
+   
+      
+    body { 
+        background: url("https://javitour.com/wp-content/uploads/2018/03/Museos-Vaticanos-1.jpg") no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
