@@ -247,13 +247,14 @@ section, footer, header, aside{
 
 
 /*-------------------------
-	Dark color theme
+	7 color theme
 --------------------------*/
 
 
 #clock.dark{
-	background-color:#272e38;
-	color:#cacaca;
+	background-color: rgb(255,0,0);
+	background: linear-gradient(90deg, rgba(255,0,0,1) 6%, rgba(244,127,3,1) 15%, rgba(235,224,5,1) 27%, rgba(91,220,9,1) 37%, rgba(0,255,247,1) 48%, rgba(46,0,255,1) 59%, rgba(243,0,255,1) 70%, rgba(255,0,117,1) 83%, rgba(255,0,0,1) 100%);;
+	color:#000000;
 }
 
 #clock.dark:after{
@@ -261,8 +262,8 @@ section, footer, header, aside{
 }
 
 #clock.dark .digits div span{
-	background-color:#cacaca;
-	border-color:#cacaca;	
+	background-color:#000000;
+	border-color:#000000;	
 }
 
 #clock.dark .alarm{
@@ -270,14 +271,15 @@ section, footer, header, aside{
 }
 
 #clock.dark .display{
-	background-color:#0f1620;
-	box-shadow:0 1px 1px rgba(0,0,0,0.08) inset, 0 1px 1px #2d3642;
+	background-color:#ffffff;
+	box-shadow:0 1px 1px rgba(255, 0, 0, 0.08) inset, 0 1px 1px #2d3642;
 }
 
 #clock.dark .digits div.dots:before,
 #clock.dark .digits div.dots:after{
-	background-color:#cacaca;
+	background-color:#000000;
 }
+
 
 
 /*-------------------------
@@ -498,14 +500,13 @@ section, footer, header, aside{
 
 
 #clock .weekdays span{
-	opacity:0.2;
+	opacity:0;
 	padding:0 10px;
 }
 
 #clock .weekdays span.active{
-	opacity:1;
+	opacity:5;
 }
-
 
 /*-------------------------
 		AM/PM
