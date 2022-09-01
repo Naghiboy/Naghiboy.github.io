@@ -4,6 +4,7 @@ body{
 }
 
 
+
 P{
   margin:auto;
   font-size:10vmin;
@@ -139,8 +140,13 @@ p>span:nth-child(-n+5){
 *{
 	margin:0;
 	padding:0;
+	
 }
 
+
+.clock {
+	
+}
 
 /*-------------------------
 	General Styles
@@ -149,7 +155,7 @@ p>span:nth-child(-n+5){
 
 html{
 	background:url('../img/bg.jpg') #dbe4e6;
-	overflow:hidden;
+	overflow:scroll;
 }
 
 body{
